@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> <!-- Include html2canvas -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+    <script src="sketch.js"></script>
+   
+
+  </head>
+  <body>
+    
+    <main>
+     
+    </main>
+    <header>
+      
+      <div class="title"> To Write is...</div> 
+      <button class="info"onclick="toggleOverlayinfo()">???</button>
+    </header>
+     <!--row1-->
+    <div class="overlayinfo" id="overlayinfo">
+      <div class="infotext">
+       <p> ‘To Write Is...’ looks beyond text as the only manifestation <br>of writing, instead explores the hidden space between thought and words. The six writing tools are intentionally designed to <br>amplify specific motions inherent in the physical and mental act <br>of writing, whether it be hesitating, capturing, arranging, or reiterating. By making aware of the invisible gestures and subconscious processes, the project aims to reframe our role in the writing process and empower the user to explore, disrupt, <br>and reshape language.</p>
+       <p><a href="https://mankunguo.com/">@Mankun Gu</a>o</p>
+      </div>
+    </div>
+    <!--row1-->
+    <div class="row1">
+      <!--block1-->
+      <div class="block1" style="border-left:0px;">    
+        <div class="imagecontainer color1">
+                <div class="overlay" id="overlay">
+                  <div>
+                    Words hover<br>at the edge of thought,<br>A pause wonders<br>what is sought.
+                  </div>
+                </div>
+                <pre>
+    (-----=========-----)
+    (                   )
+    (                   )
+    (____           ____)        
+    =======_______=========｜
+   (---------------------)
+(+++++.               .+++++)
+(  {} {} {} {} {} {} {} {}  )
+(   {} {} {} {} {} {} {}    )
+(  {} {} {} {} {} {} {} {}  )
+(   {} {} {} {} {} {} {}    )
+|      |______________|     |
+.\---\_________________/---/.
+                 </pre>
+        </div>
+        <div class="description">
+          <div>To Linger</div>
+          <button class="questionmark" onclick="toggleOverlay()">?</button>
+        </div>
+      </div>
+
+    <!--block2-->
+      <div class="block1">  
+        <div class="imagecontainer color2">
+                <div class="overlay2" id="overlay2">
+                  <div>A fleeting phrase,<br>reach and hold,<br>before it's cold,<br>before it fades. </div>
+                </div>
+          <pre>
+      X-------_-------X
+      X               X
+      X               X
+      X               X
+    -M-----------------M==$$
+     | OoooooooooooooO |
+  __==\_______________/==__
+\  :_: :_: :_: :_: :_: :_:  /
+|    :_: :_: :_: :_: :_:    |
+|  :_: :_: :_: :_: :_: :_:  |
+|    :_: :_: :_: :_: :_:    |
+ \    (===============)    /
+   \-___-------------___-/
+                 </pre>
+        </div>
+        <div class="description">
+          <div>To Catch</div>
+          <button class="questionmark" onclick="toggleOverlay2()">?</button>
+        </div>
+      </div>
+
+      <!--block3-->
+      <div class="block1" >  
+        <div class="imagecontainer color3">
+                <div class="overlay3" id="overlay3">
+                  <div>Piece by piece,<br>jumbled and wild.<br>Seeking sense<br>from tangled miles.</div>
+                </div>
+          <pre>
+       I------++------I
+       O              O
+       O              O
+       O_            _O
+     =====.   ++   .=====888|
+      |.              .|
+ :.....^^^^^^^^^^^^^^^^......:
+{  (O) (O) (O) (O) (O) (O)  }
+|    (O) (O) (O) (O) (O)    |
+|  (O) (O) (O) (O) (O) (O)  |
+{    (O) (O) (O) (O) (O)    }
+ :      ^IIIIIIIIIII^      :
+   --___________________-- 
+     
+                 </pre>
+        </div>
+        <div class="description">
+          <div>To Sort</div>
+          <button class="questionmark" onclick="toggleOverlay3()">?</button>
+        </div>
+      </div>
+
+    </div>
+    <!--row1-->
+    <!--row2-->
+    <div class="row1">
+      <!--block4-->
+      <div class="block1" style="border-left:0px;">    
+        <div class="imagecontainer color4">
+                <div class="overlay4" id="overlay4">
+                  <div>One finds another,<br>spans and grows.<br>It's tying.<br>It's flowing.</div>
+                </div>
+          <pre>
+     l=================l
+     l                 l
+     l                 l
+     l                 l
+#=======               ====
+   | _{  }__  .  __{  }_ |
+|---------==========--------|
+l  (_) (_) (_) (_) (_) (_)  l
+l    (_) (_) (_) (_) (_)    l
+l  (_) (_) (_) (_) (_) (_)  l
+l    (_) (_) (_) (_) (_)    l
+l     |...............|     l
+ ..---_________________---..
+        
+                 </pre>
+        </div>
+        <div class="description">
+          <div>To Connect</div>
+          <button class="questionmark" onclick="toggleOverlay4()">?</button>
+        </div>
+      </div>
+
+    <!--block5-->
+      <div class="block1">  
+        <div class="imagecontainer color5">
+                <div class="overlay5" id="overlay5">
+                  <div>Thoughts takes its shape.<br>Breath drawn to sight.<br>Flesh born from ink,<br>alive and bright.</div>
+                </div>
+          <pre>
+      +...---------...+
+      :               :
+      :               :
+      :_             _:
+     0. .oooooooooooo. .00-|
+      |   ----------  |
+ /:::::::::::;;::::::::::::\
+:  !+! !+! !+! !+! !+! !+!  :
+:    !+! !+! !+! !+! !+!    :
+:  !+! !+! !+! !+! !+! !+!  :
+:    !+! !+! !+! !+! !+!    :
+ \      @___________@      /
+   \ ................... /
+        
+          </pre>
+        </div>
+        <div class="description">
+          <div>To Embody</div>
+          <button class="questionmark" onclick="toggleOverlay5()">?</button>
+        </div>
+      </div>
+
+      <!--block6-->
+      <div class="block1" >  
+        <div class="imagecontainer color6">
+                <div class="overlay6" id="overlay6">
+                  <div>Repeat, repeat,<br>until it fades.<br>The meaning blurs,<br>the truth decays,</div>
+                </div>
+          <pre>
+     I----------------I
+     I                I
+     I                I
+     I.              .I     
+       --__________-------II
+     I-----------------I
+:---------        ---------:
+|  [][][][][][][][][][][]  |
+|   [][][][][][][][][][]   |
+|  [][][][][][][][][][][]  |
+|   [][][][][][][][][][]   |
+ |    (_______________)   |
+  - - __________________ - -
+     
+                 </pre>
+        </div>
+        <div class="description">
+          <div>To Reiterate</div>
+          <button class="questionmark" onclick="toggleOverlay6()">?</button>
+        </div>
+      </div>
+
+    </div>
+        <!--row2-->
+
+
+
+
+    
+  </body>
+</html>
